@@ -1,0 +1,153 @@
+<resources>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- LOS BOTONES DE RADIO -->
+    <style name="radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:textColor">#FDFEFE</item>
+        <item name="android:buttonTint">#7D3C98</item>
+    </style>
+
+    <!-- CASILLAS -->
+    <style name="casilla_a1">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_a2">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_a3">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_b1">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_b2">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_b3">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_c1">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_c2">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <style name="casilla_c3">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:onClick">tocarCasilla</item>
+    </style>
+
+    <!-- BOTONES RELATIVOS A LA FUNCIONALIDAD DEL PROGRAMA -->
+    <style name="boton1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#E74C3C</item>
+        <item name="android:onClick">jugar</item>
+    </style>
+
+    <style name="boton2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#F4D03F</item>
+        <item name="android:onClick">jugar</item>
+    </style>
+
+    <style name="boton3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#58D68D</item>
+        <item name="android:onClick">jugar</item>
+    </style>
+
+    <style name="boton4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#5DADE2</item>
+        <item name="android:onClick">jugar</item>
+    </style>
+
+
+</resources>

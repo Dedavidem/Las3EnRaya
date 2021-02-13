@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorFondo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="1"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_un_jugador"
+                    style="@style/boton1"
+                    android:text="@string/un_jugador" />
+
+                <Button
+                    android:id="@+id/btn_dos_jugadores"
+                    style="@style/boton2"
+                    android:text="@string/dos_jugadores" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/grupo_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#17202A"
+                android:layout_marginBottom="25dp">
+
+                <RadioButton
+                    android:id="@+id/radio_facil"
+                    style="@style/radio"
+                    android:checked="true"
+                    android:layout_width="106dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="@string/facil" />
+
+                <RadioButton
+                    android:id="@+id/radio_dificil"
+                    style="@style/radio"
+                    android:layout_marginLeft="110dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/dificil" />
+
+                <RadioButton
+                    android:id="@+id/radio_extremo"
+                    style="@style/radio"
+                    android:layout_marginLeft="110dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/extreme" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorFondo"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/partidas"
+                        style="@style/boton3"
+                        android:onClick="listaPartidas"
+                        android:text="@string/partidas" />
+
+                    <Button
+                        android:id="@+id/ranking"
+                        style="@style/boton4"
+                        android:onClick="listaRanking"
+                        android:text="@string/ranking" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/botonSonido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="reproduceSonido"
+                        android:text="REPRODUCE" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/espacio1"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="319dp"
+            android:layout_height="316dp">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/negroClaro"
+                android:columnCount="3"
+                android:rowCount="3">
+
+                <ImageView
+                    android:id="@+id/a1"
+                    style="@style/casilla_a1"
+                    android:src="@drawable/casilla" />
+
+                <ImageView
+                    android:id="@+id/a2"
+                    style="@style/casilla_a2" />
+
+                <ImageView
+                    android:id="@+id/a3"
+                    style="@style/casilla_a3"
+                    android:src="@drawable/casilla" />
+
+                <ImageView
+                    android:id="@+id/b1"
+                    style="@style/casilla_b1" />
+
+                <ImageView
+                    android:id="@+id/b2"
+                    style="@style/casilla_b2" />
+
+                <ImageView
+                    android:id="@+id/b3"
+                    style="@style/casilla_b3" />
+
+                <ImageView
+                    android:id="@+id/c1"
+                    style="@style/casilla_c1"
+                    android:src="@drawable/casilla" />
+
+                <ImageView
+                    android:id="@+id/c2"
+                    style="@style/casilla_c2" />
+
+                <ImageView
+                    android:id="@+id/c3"
+                    style="@style/casilla_c3"
+                    android:src="@drawable/casilla" />
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultadoPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorTitulo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="invisible"
+        android:layout_marginTop="9dp"
+        android:alpha="1"
+        android:background="#90ee90"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="gravity"/>
+
+</RelativeLayout>

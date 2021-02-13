@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic tac Toe</string>
+    <string name="un_jugador">1 PLAYER</string>
+    <string name="dos_jugadores">2 PLAYERS</string>
+    <string name="partidas">Games</string>
+    <string name="ranking">Ranking</string>
+
+    <string name="facil">Easy</string>
+    <string name="dificil">Hard</string>
+    <string name="extreme">Extreme</string>
+
+    <string name="gana_jugador2">¡PLAYER 2 WINS!</string>
+    <string name="gana_jugador1">¡PLAYER 1 WINS!</string>
+    <string name="empate">¡DRAW!</string>
+    <string name="escribeNick">Write a nickname</string>
+    <string name="insertarNombre">GO TO APP</string>
+    <string name="resultadoPartidas">Game\'s results</string>
+    <string name="goBackButton">Go back</string>
+    <string name="resultadoRankings">Ranking data</string>
+    <string name="usuario">User</string>
+    <string name="puntos">Points</string>
+    <string name="j1">Player 1</string>
+    <string name="j2">Player 2</string>
+    <string name="machine">BOT</string>
+    <string name="dificultad">Level</string>
+    <string name="resultados">Winner</string>
+    <string name="ultimaPartida">CHECK LAST GAME</string>
+    <string name="actualizar">REFRESH</string>
+    <string name="resultadoEmpate">Draw</string>
+
+
+</resources>

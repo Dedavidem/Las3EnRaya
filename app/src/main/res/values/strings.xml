@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Tres en Raya</string>
+    <string name="un_jugador">1 JUGADOR</string>
+    <string name="dos_jugadores">2 JUGADORES</string>
+    <string name="partidas">Partidas</string>
+    <string name="ranking">Ránking</string>
+
+    <string name="facil">Fácil</string>
+    <string name="dificil">Difícil</string>
+    <string name="extreme">Extremo</string>
+
+    <string name="gana_jugador2">¡HA GANADO EL JUGADOR 2!</string>
+    <string name="gana_jugador1">¡HA GANADO EL JUGADOR 1!</string>
+    <string name="empate">¡EMPATE!</string>
+    <string name="escribeNick">Escribe un nombre</string>
+    <string name="insertarNombre">ADELANTE</string>
+    <string name="resultadoPartidas">Resultado de las Partidas</string>
+    <string name="goBackButton">Volver atrás</string>
+    <string name="resultadoRankings">Datos de los Ránkings</string>
+    <string name="usuario">Usuario</string>
+    <string name="puntos">Puntos</string>
+    <string name="j1">Jugador 1</string>
+    <string name="j2">Jugador 2</string>
+    <string name="machine">Máquina</string>
+    <string name="dificultad">Dificultad</string>
+    <string name="resultados">Ganador</string>
+    <string name="ultimaPartida">VER ULTIMA PARTIDA</string>
+    <string name="actualizar">ACTUALIZAR</string>
+    <string name="resultadoEmpate">Empate</string>
+
+</resources>
